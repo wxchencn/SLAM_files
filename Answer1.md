@@ -1,17 +1,17 @@
 # Unit1
 
-## 熟悉Linux
+## 1.熟悉Linux
 
-### 1.如何在Ubuntu 中安装软件（命令⾏界⾯）？它们通常被安装在什么地⽅？
+### 1.1 如何在Ubuntu 中安装软件（命令⾏界⾯）？它们通常被安装在什么地⽅？
 - sudo apt install xxx
 - /usr/share and /usr/local
 
-### 2.linux 的环境变量是什么？我如何定义新的环境变量？
+### 1.2 linux 的环境变量是什么？我如何定义新的环境变量？
 - /etc/profile //对所有用户生效 (永久)
 - ~/.bashrc //对当前用户生效
 - export 变量名=变量值 //对当前shell生效 (临时)
 
-### 3.linux 根⽬录下⾯的⽬录结构是什么样的？⾄少说出3个⽬录的⽤途。
+### 1.3 linux 根⽬录下⾯的⽬录结构是什么样的？⾄少说出3个⽬录的⽤途。
 
 **/ 根目录**
 
@@ -107,5 +107,42 @@
    </tr>
 </table>
 
-### 4.给a.sh加上可执行权限，该输入什么命令？
-- chmod
+### 1.4 给a.sh加上可执行权限，该输入什么命令？
+- 三种权限 <b>R</b>ead <b>W</b>rite e<b>X</b>ecute
+- **chmod mode file;** example: chmod a+x a.sh
+  - u表示拥有者，g表示拥有者group全体，o表示others，a表示all
+  - \+ 表示增加权限、- 表示取消权限、= 表示唯一设定权限
+  - r 表示可读取，w 表示可写入，x 表示可执行
+- **chmod abc file;** example: chmod 777 a.sh
+  - a,b,c各位一个数字，分别表示User、Group、Other的权限
+  - r = 4, w = 2, x = 1
+
+### 1.5 将a.sh文件的所有者改成xiang:xiang，该输入什么命令？
+- chown [-R] name file
+
+## 2.SLAM综述文献阅读
+
+### 2.1 SLAM会在哪些应用场合中用到？
+- 增强现实
+- 机器人导航
+- 自动驾驶
+
+### 2.2 SLAM中定位和建图的关系？
+定位和建图可以看成感知的内外两部分，定位是明白自身的状态，建图是了解外在的环境。
+
+### 2.3 SLAM发展历史分为几个阶段？
+- Classical age [1986-2004]
+  - 基于EKF、RB粒子滤波、最大似然估计的方法
+- Algorithmic-analysis age [2004-2015]
+- Current state
+
+### 2.4 SLAM领域的经典文章
+- [1] H. Liu, G. Zhang, and H. Bao, “A survey of monocular simultaneous localization and mapping,” Jisuanji Fuzhu Sheji Yu Tuxingxue Xuebao/Journal Comput. Des. Comput. Graph., vol. 28, no. 6, pp. 855–868, 2016.
+- [2] C. Cadena et al., “Past, present, and future of simultaneous localization and mapping: Toward the robust-perception age,” IEEE Trans. Robot., vol. 32, no. 6, pp. 1309–1332, 2016.
+- [3] J. Fuentes-Pacheco, J. Ruiz-Ascencio, and J. M. Rendón-Mancha, “Visual simultaneous localization and mapping: a survey,” Artif. Intell. Rev., vol. 43, no. 1, pp. 55–81, 2012.
+
+## 3.CMake 练习
+
+### 源代码
+
+## 4.理解ORB-SLAM2框架

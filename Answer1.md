@@ -1,5 +1,22 @@
 # Unit1
-
+- [Unit1](#unit1)
+  - [<ul>
+<li>4.理解ORB-SLAM2框架</li>
+</ul>](#ul-li4%e7%90%86%e8%a7%a3orb-slam2%e6%a1%86%e6%9e%b6li-ul)
+  - [1.熟悉Linux](#1%e7%86%9f%e6%82%89linux)
+    - [1.1 如何在Ubuntu 中安装软件（命令⾏界⾯）？它们通常被安装在什么地⽅？](#11-%e5%a6%82%e4%bd%95%e5%9c%a8ubuntu-%e4%b8%ad%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%91%bd%e4%bb%a4%e2%be%8f%e7%95%8c%e2%be%af%e5%ae%83%e4%bb%ac%e9%80%9a%e5%b8%b8%e8%a2%ab%e5%ae%89%e8%a3%85%e5%9c%a8%e4%bb%80%e4%b9%88%e5%9c%b0%e2%bd%85)
+    - [1.2 linux 的环境变量是什么？我如何定义新的环境变量？](#12-linux-%e7%9a%84%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%98%af%e4%bb%80%e4%b9%88%e6%88%91%e5%a6%82%e4%bd%95%e5%ae%9a%e4%b9%89%e6%96%b0%e7%9a%84%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f)
+    - [1.3 linux 根⽬录下⾯的⽬录结构是什么样的？⾄少说出3个⽬录的⽤途。](#13-linux-%e6%a0%b9%e2%bd%ac%e5%bd%95%e4%b8%8b%e2%be%af%e7%9a%84%e2%bd%ac%e5%bd%95%e7%bb%93%e6%9e%84%e6%98%af%e4%bb%80%e4%b9%88%e6%a0%b7%e7%9a%84%e2%be%84%e5%b0%91%e8%af%b4%e5%87%ba3%e4%b8%aa%e2%bd%ac%e5%bd%95%e7%9a%84%e2%bd%a4%e9%80%94)
+    - [1.4 给a.sh加上可执行权限，该输入什么命令？](#14-%e7%bb%99ash%e5%8a%a0%e4%b8%8a%e5%8f%af%e6%89%a7%e8%a1%8c%e6%9d%83%e9%99%90%e8%af%a5%e8%be%93%e5%85%a5%e4%bb%80%e4%b9%88%e5%91%bd%e4%bb%a4)
+    - [1.5 将a.sh文件的所有者改成xiang:xiang，该输入什么命令？](#15-%e5%b0%86ash%e6%96%87%e4%bb%b6%e7%9a%84%e6%89%80%e6%9c%89%e8%80%85%e6%94%b9%e6%88%90xiangxiang%e8%af%a5%e8%be%93%e5%85%a5%e4%bb%80%e4%b9%88%e5%91%bd%e4%bb%a4)
+  - [2.SLAM综述文献阅读](#2slam%e7%bb%bc%e8%bf%b0%e6%96%87%e7%8c%ae%e9%98%85%e8%af%bb)
+    - [2.1 SLAM会在哪些应用场合中用到？](#21-slam%e4%bc%9a%e5%9c%a8%e5%93%aa%e4%ba%9b%e5%ba%94%e7%94%a8%e5%9c%ba%e5%90%88%e4%b8%ad%e7%94%a8%e5%88%b0)
+    - [2.2 SLAM中定位和建图的关系？](#22-slam%e4%b8%ad%e5%ae%9a%e4%bd%8d%e5%92%8c%e5%bb%ba%e5%9b%be%e7%9a%84%e5%85%b3%e7%b3%bb)
+    - [2.3 SLAM发展历史分为几个阶段？](#23-slam%e5%8f%91%e5%b1%95%e5%8e%86%e5%8f%b2%e5%88%86%e4%b8%ba%e5%87%a0%e4%b8%aa%e9%98%b6%e6%ae%b5)
+    - [2.4 SLAM领域的经典文章](#24-slam%e9%a2%86%e5%9f%9f%e7%9a%84%e7%bb%8f%e5%85%b8%e6%96%87%e7%ab%a0)
+  - [3.CMake 练习](#3cmake-%e7%bb%83%e4%b9%a0)
+  - [4.理解ORB-SLAM2框架](#4%e7%90%86%e8%a7%a3orb-slam2%e6%a1%86%e6%9e%b6)
+---
 ## 1.熟悉Linux
 
 ### 1.1 如何在Ubuntu 中安装软件（命令⾏界⾯）？它们通常被安装在什么地⽅？
@@ -143,6 +160,7 @@
 
 ## 3.CMake 练习
 
-### 源代码
+参考SLAM十四讲(第二版)内容 [Page 30]
 
 ## 4.理解ORB-SLAM2框架
+

@@ -67,12 +67,13 @@ $Cholesky$ 分解法又叫平方根法，是求解对称正定线性方程组常
     include_directories("/usr/include/eigen3")
     add_executable(useEigen useEigen.cpp)
     ```
+
 ## 2.几何运算练习
 **设有小萝卜一号和二号位于世界坐标系中。小萝卜一号的位姿为：$q_1 = [0.55,0.3,0.2,0.2], t_1 = [0.7,1.1,0.2]^T (q的第一项为实部)$。这里的 $q$ 和 $t$ 表达的是 $T_{cw}$ ，也就是世界到相机的的变换关系。小萝卜二号的位姿为$q_2 = [-0.1,0.3,-0.7,0.2],t_2 = [-0.1,0.4,0.8]^T$。现在，小萝卜一号看到某个点在自身的坐标系下，坐标为$p_1 = [0.5,-0.1,0.2]^T$，求该向量在小萝卜二号坐标系下的坐标。**
+    解答：设点 $p$ 在世界坐标系下的坐标为 $p_w$ ，则：
+    $$ p_1 = q_1p_wq_1^{-1} + t_1\\ p_2 = q_2p_wq_2^{-1} + t_2\\ $$
+    由此求得 $p_2$。
 
-解答：设点 $p$ 在世界坐标系下的坐标为 $p_w$ ，则：
-\[p_1 = q_1p_wq_1^{-1} + t_1\\ p_2 = q_2p_wq_2^{-1} + t_2\\ \]
-由此求得 $p_2$。
 ### 代码实现：
 
 **geometry.cpp**
@@ -127,12 +128,15 @@ add_executable(geometry geometry.cpp)
    **或者**
    $$q_1\cdot q_2 = q_2^{\oplus} q_1 \tag{3}$$
    证明：根据公式 $q_aq_b = [\eta_a\eta_b - \varepsilon_a^T\varepsilon_b, \eta_a\varepsilon_b + \eta_b\varepsilon_a + \varepsilon_a \times \varepsilon_b]$ 容易得证。
+
 ## 4.罗德里格斯公式的证明
 **罗德里格斯公式描述了从旋转向量到旋转矩阵的转换关系。设旋转向量长度为 $\theta$ ，方向为 $n$ ，那么旋转矩阵 $R$ 为：**
 $$R = cos{\theta I} - (1 - cos\theta)nn^T + sin{\theta n^\wedge}\tag{4}$$
 **请证明此式。**
+
 证明：
 ![rodeigues-formula](/images/Rodeigues-formula.png)
 ![rodeigues](/images/Rodrigues.png)
-
+![1u8lB8.png](https://s2.ax1x.com/2020/01/27/1u8lB8.png)
+![1u8Qnf.png](https://s2.ax1x.com/2020/01/27/1u8Qnf.png)
 ## 5.四元数运算性质的验证
